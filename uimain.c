@@ -16,10 +16,6 @@ int main()
 
     // Given the user answer, select which method to call
     switch (c) {
-    case 'A':
-      puts("You selected arrow");
-      print_arrow(25, 27, 25, 25);
-      break;
     case 't':
       puts("You selected triangle:");
       print_triangle(5, 7);
@@ -33,9 +29,13 @@ int main()
       for (char c = 'A'; c < 'D'; c++)
 	print_char_11x16(c);
       break;
+    case 'a':                    
+      puts("You selected arrow");
+      print_arrow(6, 7, 10, 6);
+      break;
     case 'q':
       puts("Bye!");
-      goto done; 		/* terminate */
+	 goto done; 		/* terminate */
     case '\n':
       break;
     default:
